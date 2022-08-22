@@ -1,8 +1,8 @@
-# Create a nomad cluster using lima
+# Create a Nomad cluster using Lima
 
 Dependencies
 
-[lima](https://github.com/lima-vm/lima)
+[Lima](https://github.com/lima-vm/lima)
 
 ```
 brew install lima
@@ -13,13 +13,14 @@ brew install lima
 ```
 git clone https://github.com/lima-vm/vde_vmnet
 cd vde_vmnet
+
 # copy paste sudo command like a badass
 sudo make PREFIX=/opt/vde install
 
 limactl sudoers | sudo tee /etc/sudoers.d/lima
 ```
 
-Create a cluster
+## Create a cluster
 
 You can change the cluster name prefix by setting the `CLUSTER_NAME` environment
 variable.
